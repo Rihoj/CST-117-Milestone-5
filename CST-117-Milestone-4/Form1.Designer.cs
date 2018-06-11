@@ -67,7 +67,7 @@
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(232, 90);
+            this.descriptionLabel.Location = new System.Drawing.Point(232, 75);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(60, 13);
             this.descriptionLabel.TabIndex = 2;
@@ -76,7 +76,7 @@
             // quantityLabel
             // 
             this.quantityLabel.AutoSize = true;
-            this.quantityLabel.Location = new System.Drawing.Point(232, 140);
+            this.quantityLabel.Location = new System.Drawing.Point(232, 101);
             this.quantityLabel.Name = "quantityLabel";
             this.quantityLabel.Size = new System.Drawing.Size(46, 13);
             this.quantityLabel.TabIndex = 3;
@@ -85,7 +85,7 @@
             // priceLabel
             // 
             this.priceLabel.AutoSize = true;
-            this.priceLabel.Location = new System.Drawing.Point(232, 172);
+            this.priceLabel.Location = new System.Drawing.Point(233, 129);
             this.priceLabel.Name = "priceLabel";
             this.priceLabel.Size = new System.Drawing.Size(37, 13);
             this.priceLabel.TabIndex = 4;
@@ -94,7 +94,7 @@
             // weightLabel
             // 
             this.weightLabel.AutoSize = true;
-            this.weightLabel.Location = new System.Drawing.Point(232, 206);
+            this.weightLabel.Location = new System.Drawing.Point(233, 159);
             this.weightLabel.Name = "weightLabel";
             this.weightLabel.Size = new System.Drawing.Size(47, 13);
             this.weightLabel.TabIndex = 5;
@@ -176,7 +176,7 @@
             // 
             this.SearchTextBox.Location = new System.Drawing.Point(59, 16);
             this.SearchTextBox.Name = "SearchTextBox";
-            this.SearchTextBox.Size = new System.Drawing.Size(469, 20);
+            this.SearchTextBox.Size = new System.Drawing.Size(493, 20);
             this.SearchTextBox.TabIndex = 14;
             this.SearchTextBox.TextChanged += new System.EventHandler(this.SearchTextBox_TextChanged);
             // 
@@ -193,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 450);
+            this.ClientSize = new System.Drawing.Size(564, 328);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.SearchTextBox);
             this.Controls.Add(this.restockButton);
