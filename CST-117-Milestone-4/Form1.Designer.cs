@@ -103,7 +103,7 @@
             // weightOutput
             // 
             this.weightOutput.AutoSize = true;
-            this.weightOutput.Location = new System.Drawing.Point(318, 206);
+            this.weightOutput.Location = new System.Drawing.Point(318, 159);
             this.weightOutput.Name = "weightOutput";
             this.weightOutput.Size = new System.Drawing.Size(0, 13);
             this.weightOutput.TabIndex = 10;
@@ -111,7 +111,7 @@
             // priceOutput
             // 
             this.priceOutput.AutoSize = true;
-            this.priceOutput.Location = new System.Drawing.Point(318, 172);
+            this.priceOutput.Location = new System.Drawing.Point(318, 129);
             this.priceOutput.Name = "priceOutput";
             this.priceOutput.Size = new System.Drawing.Size(0, 13);
             this.priceOutput.TabIndex = 9;
@@ -119,7 +119,7 @@
             // quantityOutput
             // 
             this.quantityOutput.AutoSize = true;
-            this.quantityOutput.Location = new System.Drawing.Point(318, 140);
+            this.quantityOutput.Location = new System.Drawing.Point(318, 101);
             this.quantityOutput.Name = "quantityOutput";
             this.quantityOutput.Size = new System.Drawing.Size(0, 13);
             this.quantityOutput.TabIndex = 8;
@@ -127,7 +127,7 @@
             // descOutput
             // 
             this.descOutput.AutoSize = true;
-            this.descOutput.Location = new System.Drawing.Point(318, 90);
+            this.descOutput.Location = new System.Drawing.Point(318, 75);
             this.descOutput.Name = "descOutput";
             this.descOutput.Size = new System.Drawing.Size(0, 13);
             this.descOutput.TabIndex = 7;

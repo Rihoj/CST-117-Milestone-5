@@ -44,7 +44,7 @@
             // weightLabel
             // 
             this.weightLabel.AutoSize = true;
-            this.weightLabel.Location = new System.Drawing.Point(12, 162);
+            this.weightLabel.Location = new System.Drawing.Point(12, 136);
             this.weightLabel.Name = "weightLabel";
             this.weightLabel.Size = new System.Drawing.Size(47, 13);
             this.weightLabel.TabIndex = 10;
@@ -53,7 +53,7 @@
             // priceLabel
             // 
             this.priceLabel.AutoSize = true;
-            this.priceLabel.Location = new System.Drawing.Point(12, 128);
+            this.priceLabel.Location = new System.Drawing.Point(12, 102);
             this.priceLabel.Name = "priceLabel";
             this.priceLabel.Size = new System.Drawing.Size(37, 13);
             this.priceLabel.TabIndex = 9;
@@ -62,7 +62,7 @@
             // quantityLabel
             // 
             this.quantityLabel.AutoSize = true;
-            this.quantityLabel.Location = new System.Drawing.Point(12, 96);
+            this.quantityLabel.Location = new System.Drawing.Point(12, 70);
             this.quantityLabel.Name = "quantityLabel";
             this.quantityLabel.Size = new System.Drawing.Size(46, 13);
             this.quantityLabel.TabIndex = 8;
@@ -71,7 +71,7 @@
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(12, 46);
+            this.descriptionLabel.Location = new System.Drawing.Point(12, 38);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(60, 13);
             this.descriptionLabel.TabIndex = 7;
@@ -91,51 +91,52 @@
             this.nameTextBox.Location = new System.Drawing.Point(88, 6);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.nameTextBox.TabIndex = 11;
+            this.nameTextBox.TabIndex = 1;
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(12, 206);
+            this.addButton.Location = new System.Drawing.Point(12, 168);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
-            this.addButton.TabIndex = 12;
+            this.addButton.TabIndex = 6;
             this.addButton.Text = "Add Item";
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.Button1_Click);
             // 
             // descTextBox
             // 
-            this.descTextBox.Location = new System.Drawing.Point(88, 43);
+            this.descTextBox.Location = new System.Drawing.Point(88, 35);
             this.descTextBox.Name = "descTextBox";
             this.descTextBox.Size = new System.Drawing.Size(100, 20);
-            this.descTextBox.TabIndex = 13;
+            this.descTextBox.TabIndex = 2;
             // 
             // quantityTextBox
             // 
-            this.quantityTextBox.Location = new System.Drawing.Point(88, 93);
+            this.quantityTextBox.Location = new System.Drawing.Point(88, 67);
             this.quantityTextBox.Name = "quantityTextBox";
             this.quantityTextBox.Size = new System.Drawing.Size(100, 20);
-            this.quantityTextBox.TabIndex = 14;
+            this.quantityTextBox.TabIndex = 3;
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(88, 125);
+            this.priceTextBox.Location = new System.Drawing.Point(88, 99);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(100, 20);
-            this.priceTextBox.TabIndex = 15;
+            this.priceTextBox.TabIndex = 4;
             // 
             // weightTextBox
             // 
-            this.weightTextBox.Location = new System.Drawing.Point(88, 159);
+            this.weightTextBox.Location = new System.Drawing.Point(88, 133);
             this.weightTextBox.Name = "weightTextBox";
             this.weightTextBox.Size = new System.Drawing.Size(100, 20);
-            this.weightTextBox.TabIndex = 16;
+            this.weightTextBox.TabIndex = 5;
             // 
             // AddItemForm
             // 
+            this.AcceptButton = this.addButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 342);
+            this.ClientSize = new System.Drawing.Size(277, 207);
             this.Controls.Add(this.weightTextBox);
             this.Controls.Add(this.priceTextBox);
             this.Controls.Add(this.quantityTextBox);

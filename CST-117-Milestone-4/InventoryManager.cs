@@ -22,6 +22,15 @@ namespace CST_117_Milestone_4
             }
         }
 
+        public void AddItems(List<string[]> items)
+        {
+            foreach(string[] item in items)
+            {
+                InventoryItem newItem = new InventoryItem(item);
+                AddItem(newItem);
+            }
+        }
+
         public InventoryItem FindItem(string itemName)
         {
             return Inventory.Find(x => x.Equals(itemName));
@@ -62,7 +71,7 @@ namespace CST_117_Milestone_4
         public void RestockItem(string item)
         {
             InventoryItem inventoryItem = FindItem(item);
-            if (inventoryItem.OutOfStock()) {
+            if (inventoryItem.OutOfStock() || inventoryItem.Quantity < DEFAULT_QUANTITY) {
                 inventoryItem.Quantity = DEFAULT_QUANTITY;
             }
         }
@@ -70,7 +79,10 @@ namespace CST_117_Milestone_4
         public void RestockItem(InventoryItem item)
         {
             InventoryItem inventoryItem = FindItem(item);
-            inventoryItem.Quantity = DEFAULT_QUANTITY;
+            if (inventoryItem.OutOfStock() || inventoryItem.Quantity < DEFAULT_QUANTITY)
+            {
+                inventoryItem.Quantity = DEFAULT_QUANTITY;
+            }
         }
 
         public override string ToString()
@@ -81,6 +93,16 @@ namespace CST_117_Milestone_4
                 value += "[" + item.ToString() + "]\n\n";
             }
             return value;
+        }
+
+        public List<string[]> GetCSVList()
+        {
+            List<string[]> lines = new List<string[]>();
+            foreach(InventoryItem item in Inventory)
+            {
+                lines.Add(item.ToArray());
+            }
+            return lines;
         }
     }
 }

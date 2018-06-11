@@ -14,6 +14,8 @@ namespace CST_117_Milestone_4
     {
         public InventoryManager Im { get; set; } = new InventoryManager();
         private AddItemForm AddItemForm;
+        private CSVManager CSVManager;
+        private static string INVENTORY_LOCATION = "../../Inventory.csv";
 
         public inventoryManagerForm()
         {
@@ -22,12 +24,9 @@ namespace CST_117_Milestone_4
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            InventoryItem itemOne = new InventoryItem("Test", "This is a test", 5, 10.99M, 3.8M);
-            InventoryItem itemTwo = new InventoryItem("Test2", "This is a second test", 10, 2.5M, 1.2M);
-            InventoryItem itemThree = new InventoryItem("Water", "This is a water", 1, 1M, .5M);
-            Im.AddItem(itemOne);
-            Im.AddItem(itemTwo);
-            Im.AddItem(itemThree);
+            CSVManager = new CSVManager();
+            List<string[]> inventory = CSVManager.readCsv(INVENTORY_LOCATION);
+            Im.AddItems(inventory);
             UpdateInventoryList();
             AddItemForm = new AddItemForm(this, Im);
         }
@@ -42,6 +41,7 @@ namespace CST_117_Milestone_4
                 inventoryListBox.Items.Add(item);
             }
             UpdateSelected();
+            CSVManager.saveCsv(INVENTORY_LOCATION, Im.GetCSVList());
         }
 
         private void UpdateInventoryList(List<InventoryItem> inventory)

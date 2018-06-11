@@ -27,6 +27,15 @@ namespace CST_117_Milestone_4
             this.Weight = Math.Round(weight, 1);
         }
 
+        public InventoryItem(string[] item)
+        {
+            this.Name = item[0];
+            this.Description = item[1];
+            this.Quantity = int.Parse(item[2]);
+            this.Price = Math.Round(decimal.Parse(item[3]), 2);
+            this.Weight = Math.Round(decimal.Parse(item[4]), 1);
+        }
+
         /// <summary>
         /// Checks to see if the item is out of stock.
         /// </summary>
@@ -89,6 +98,18 @@ namespace CST_117_Milestone_4
         public override string ToString()
         {
             return Name;
+        }
+
+        public string[] ToArray()
+        {
+            return new string[]
+                {
+                    Name,
+                    Description,
+                    Quantity.ToString(),
+                    Price.ToString(),
+                    Weight.ToString()
+                };
         }
     }
 }
